@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pridi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin:700&display=swap');
 body, html{
     margin: 0;
     padding: 0;
@@ -9,8 +10,7 @@ body, html{
 }
 
 .eng {
-    font-family: 'Viga', sans-serif;
-    !important;
+    font-family: 'Cabin', sans-serif !important;
 }
 
 .navbar {
@@ -59,13 +59,21 @@ body, html{
     padding-bottom: 20px;
 }
 
+.footer {
+   left: 0;
+   bottom: 0;
+   padding: 15px;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
 @media all and (max-width: 1200px) {
     /* start of large styles */
     .detail {
         width: 50%;
         margin-top: 120px;
     }
-    
 }
 
 @media all and (max-width: 991px){
@@ -95,5 +103,9 @@ body, html{
     .detail {
         width: 100%;
         margin-top: 50px;
+    }
+    .clip{
+        width: 100% !important;
+        height: 50% !important;
     }
 }
