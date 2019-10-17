@@ -43,7 +43,7 @@ body, html{
     font-family: 'Kanit', sans-serif;
 }
 
-.site1 {
+.site1{
     height: 100%;
     width: 100%;
     padding-top: 10px;
@@ -58,7 +58,6 @@ body, html{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 .footer {
     left: 0;
@@ -163,6 +162,25 @@ body, html{
 }
 .card:hover .title-front-card{
     opacity: 0;
+}
+
+.slide{
+    height: 90%;
+    width: 100%;
+}
+
+.slide img{
+    border-radius: 5%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.carousel{
+    margin-top: 50px;
+    
+}
+
+.head{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 @media all and (max-width: 1200px) {
