@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Pridi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin:700&display=swap');
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.site1{
+	height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: url("pic/1111.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.site2{
+	background-color: black;
+	height: 100%;
+	width: 100%;
+}
+.navbar {
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #000;
+    background: transparent !important;
+    font-family: 'Kanit', sans-serif;
+}
+.detail {
+    color: #228F60;
+    width: 50%;
+    margin-top: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px #000;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 10px;
+    font-size: 60px;
+
+}
+.btn{
+	width: 50%;
+	color: white;
+}
