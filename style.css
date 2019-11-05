@@ -16,9 +16,9 @@ body, html {
 }
 
 .navbar {
+    background-color: transparent !important;
     letter-spacing: 1px;
     text-shadow: 2px 2px #000;
-    background: transparent !important;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -213,7 +213,8 @@ body, html {
 }
 
 /* star */
-.star-index{
+
+.star-index {
     height: 100%;
     width: 100%;
     padding-left: 30px;
@@ -223,7 +224,6 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 .blog-index {
     height: 100%;
@@ -259,7 +259,7 @@ body, html {
     width: 100%;
 }
 
-.star-site3, .star-site4, .star-site5, .star-site6 {
+.star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7{
     height: auto;
     width: 100%;
     padding-right: 30px;
@@ -300,6 +300,17 @@ body, html {
 
 /* outer */
 
+.outer-index {
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url("./pic/bg-darkmatter.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .head-outer {
     width: 100%;
     height: 10vh;
@@ -317,23 +328,118 @@ body, html {
     color: #FCB62F;
     text-align: center;
     letter-spacing: 5px;
-    font-size: 10vh;
+    font-size: 5vw;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.site1-outer, .outer-site2, .outer-site3, .outer-site4, .outer-site5, .outer-site6 {
+.outer-text {
+    color: #FCB62F;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 5vw;
+}
+
+.site1-outer {
     height: 100%;
     width: 100%;
-    background: url("./pic/outer.jpg");
+    background: url("./pic/outer1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.outer-site2 .sec2 {
-    margin-top: 15%;
+.outer-site2 {
+    height: 100%;
+    width: 100%;
+    background: url("./pic/outer2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7{
+    height: auto;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: url("./pic/outer2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* galaxy */
+
+.galaxy-index {
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url("./pic/bg-galaxy3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.head-galaxy {
+    width: 100%;
+    height: 10vh;
+    background-color: #C82500;
+}
+
+.blog-index {
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.site1-galaxy-text {
+    color: #C82500;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 5vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.galaxy-text {
+    text-align: center;
+    color: #C82500;
+    letter-spacing: 5px;
+    font-size: 5vw;
+}
+
+.site1-galaxy {
+    height: 100%;
+    width: 100%;
+    background: url("./pic/bg-galaxy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galaxy-site2 {
+    height: 100%;
+    width: 100%;
+    background: url("./pic/bg-galaxy2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6, .galaxy-site7 {
+    height: auto;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: url("./pic/bg-galaxy2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media all and (max-width: 1200px) {
@@ -342,7 +448,13 @@ body, html {
         width: 50%;
         margin-top: 120px;
     }
-    .star-site3, .star-site4, .star-site5, .star-site6 {
+    .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7{
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
         height: auto;
         width: 100%;
         padding-left: 0;
@@ -359,21 +471,23 @@ body, html {
     .text-slide {
         margin-top: 30px;
     }
-    .star-site3, .star-site4, .star-site5, .star-site6 {
+    .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7{
         height: auto;
         width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
-    .circle {
-        width: 90vw;
-        height: 90vw;
+    .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
 @media all and (max-width: 767px) {
     /* start of medium tablet styles */
-    .site1, .star-index{
+    .site1, .star-index {
         height: auto;
     }
     .detail {
@@ -383,21 +497,23 @@ body, html {
     .text-slide {
         margin-top: 30px;
     }
-    .star-site3, .star-site4, .star-site5, .star-site6 {
+    .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7{
         height: auto;
         width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
-    .circle {
-        width: 90vw;
-        height: 90vw;
+    .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
 @media all and (max-width: 479px) {
     /* start of phone styles */
-    .site1, .star-index{
+    .site1, .star-index {
         height: auto;
     }
     .detail {
@@ -407,14 +523,16 @@ body, html {
     .text-slide {
         margin-top: 30px;
     }
-    .star-site3, .star-site4, .star-site5, .star-site6 {
+    .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7{
         height: auto;
         width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
-    .circle {
-        width: 90vw;
-        height: 90vw;
+    .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
