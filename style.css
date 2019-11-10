@@ -222,15 +222,19 @@ html {
   background-size: cover;
 }
 
-/*login*/
-.login-page{
-  background: url("./pic/bg2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
+/*img*/
+.pic-blog img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
+.pic-blog:hover img {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
+}
+
+/*login*/
 .wrapper {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -659,3 +663,48 @@ html {
     padding-right: 0;
   }
 }
+
+
+
+/*  nebular */
+
+/*reflectionnebular*/
+.site1-nebular{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_reflection {
+  width: 100%;
+  height: 5vh;
+  background-color: #e27c66;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
+}
+.reflection_site2{
+
+  background: url("./pic/nebular1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.picreflections { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 50%; 
+    height: 50%; 
+    
+    
+}
+
