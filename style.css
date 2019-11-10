@@ -686,8 +686,8 @@ html {
 /* animations zoomin zoomout background*/
 @keyframes breath {
   0%   { background-size: 100% auto; }
-  50% { background-size: 140% auto; }
-  100% { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
 }
 .reflection_site2{
 
@@ -708,3 +708,102 @@ html {
     
 }
 
+
+/*planetarynebular*/
+.site1-planetary{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_planetary{
+  width: 100%;
+  height: 5vh;
+  background-color: #91426f;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
+}
+.planetary_site2{
+
+  background: url("./pic/nebular3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*supernova remnant*/
+
+.site1-supernova{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_supernova{
+  width: 100%;
+  height: 5vh;
+  background-color: #91426f;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
+}
+.supernova_site2{
+
+  background: url("./pic/nebular2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Dark nebular   */
+
+
+.site1-dark{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_supernova{
+  width: 100%;
+  height: 5vh;
+  background-color: #91426f;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
+}
+.dark_site2{
+
+  background: url("./pic/nebular8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
