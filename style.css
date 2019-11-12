@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Viga&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cabin:700&display=swap");
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -24,13 +25,15 @@ body, html {
 
 .shadow-b {
   letter-spacing: 1px;
-  text-shadow: 4px 4px 0px #242424, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+  text-shadow: 2px 2px #000;
   font-family: "Kanit", sans-serif;
 }
 
 .shadow-w {
   letter-spacing: 1px;
-  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+  text-shadow: 2px 2px #fff;
   font-family: "Kanit", sans-serif;
 }
 
@@ -52,6 +55,10 @@ body, html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.text-slide {
+  line-height: 1.3em;
 }
 
 .footer {
@@ -207,26 +214,27 @@ body, html {
 }
 
 /*bloghome*/
-
-.blog-home {
+.blog-home{
   background: url("./pic/bg2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/*img*/
+.pic-blog img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.pic-blog:hover img {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
 }
 
 /*login*/
-
-.login-page {
-  background: url("./pic/bg2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
-}
-
 .wrapper {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -239,15 +247,13 @@ body, html {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-.form-signin .form-signin-heading, .form-signin .checkbox {
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
   margin-bottom: 30px;
 }
-
 .form-signin .checkbox {
   font-weight: normal;
 }
-
 .form-signin .form-control {
   position: relative;
   font-size: 16px;
@@ -257,17 +263,14 @@ body, html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .form-signin .form-control:focus {
   z-index: 2;
 }
-
 .form-signin input[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-
 .form-signin input[type="password"] {
   margin-bottom: 20px;
   border-top-left-radius: 0;
@@ -275,7 +278,6 @@ body, html {
 }
 
 /* star */
-
 .star-index {
   height: 100%;
   width: 100%;
@@ -294,7 +296,8 @@ body, html {
   padding-bottom: 50px;
 }
 
-.site1-star, .star-site2 {
+.site1-star,
+.star-site2 {
   height: 100%;
   width: 100%;
   background: url("./pic/star.jpg");
@@ -303,14 +306,6 @@ body, html {
   background-repeat: no-repeat;
 }
 
-.blog-index {
-  height: 100%;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 50px;
-}
-
-.site1-star,
 .star-site2 {
   height: auto;
   width: 100%;
@@ -329,7 +324,15 @@ body, html {
   width: 100%;
 }
 
-.star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7 {
+.star-site3,
+.star-site4,
+.star-site5,
+.star-site6,
+.outer-site3,
+.outer-site4,
+.outer-site5,
+.outer-site6,
+.outer-site7 {
   height: auto;
   width: 100%;
   padding-right: 30px;
@@ -429,7 +432,11 @@ body, html {
   background-repeat: no-repeat;
 }
 
-.outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7 {
+.outer-site3,
+.outer-site4,
+.outer-site5,
+.outer-site6,
+.outer-site7 {
   height: auto;
   width: 100%;
   padding-right: 30px;
@@ -501,7 +508,11 @@ body, html {
   background-repeat: no-repeat;
 }
 
-.galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6, .galaxy-site7 {
+.galaxy-site3,
+.galaxy-site4,
+.galaxy-site5,
+.galaxy-site6,
+.galaxy-site7 {
   height: auto;
   width: 100%;
   padding-right: 30px;
@@ -518,13 +529,24 @@ body, html {
     width: 50%;
     margin-top: 120px;
   }
-  .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7 {
+  .star-site3,
+  .star-site4,
+  .star-site5,
+  .star-site6,
+  .outer-site3,
+  .outer-site4,
+  .outer-site5,
+  .outer-site6,
+  .outer-site7 {
     height: auto;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
-  .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
+  .galaxy-site3,
+  .galaxy-site4,
+  .galaxy-site5,
+  .galaxy-site6 {
     height: auto;
     width: 100%;
     padding-left: 0;
@@ -541,13 +563,24 @@ body, html {
   .text-slide {
     margin-top: 30px;
   }
-  .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7 {
+  .star-site3,
+  .star-site4,
+  .star-site5,
+  .star-site6,
+  .outer-site3,
+  .outer-site4,
+  .outer-site5,
+  .outer-site6,
+  .outer-site7 {
     height: auto;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
-  .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
+  .galaxy-site3,
+  .galaxy-site4,
+  .galaxy-site5,
+  .galaxy-site6 {
     height: auto;
     width: 100%;
     padding-left: 0;
@@ -557,7 +590,8 @@ body, html {
 
 @media all and (max-width: 767px) {
   /* start of medium tablet styles */
-  .site1, .star-index {
+  .site1,
+  .star-index {
     height: auto;
   }
   .detail {
@@ -567,13 +601,24 @@ body, html {
   .text-slide {
     margin-top: 30px;
   }
-  .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7 {
+  .star-site3,
+  .star-site4,
+  .star-site5,
+  .star-site6,
+  .outer-site3,
+  .outer-site4,
+  .outer-site5,
+  .outer-site6,
+  .outer-site7 {
     height: auto;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
-  .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
+  .galaxy-site3,
+  .galaxy-site4,
+  .galaxy-site5,
+  .galaxy-site6 {
     height: auto;
     width: 100%;
     padding-left: 0;
@@ -583,7 +628,8 @@ body, html {
 
 @media all and (max-width: 479px) {
   /* start of phone styles */
-  .site1, .star-index {
+  .site1,
+  .star-index {
     height: auto;
   }
   .detail {
@@ -593,16 +639,171 @@ body, html {
   .text-slide {
     margin-top: 30px;
   }
-  .star-site3, .star-site4, .star-site5, .star-site6, .outer-site3, .outer-site4, .outer-site5, .outer-site6, .outer-site7 {
+  .star-site3,
+  .star-site4,
+  .star-site5,
+  .star-site6,
+  .outer-site3,
+  .outer-site4,
+  .outer-site5,
+  .outer-site6,
+  .outer-site7 {
     height: auto;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
-  .galaxy-site3, .galaxy-site4, .galaxy-site5, .galaxy-site6 {
+  .galaxy-site3,
+  .galaxy-site4,
+  .galaxy-site5,
+  .galaxy-site6 {
     height: auto;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+
+
+/*  nebular */
+
+/*reflectionnebular*/
+.site1-nebular{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_reflection {
+  width: 100%;
+  height: 5vh;
+  background-color: #e27c66;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
+}
+.reflection_site2{
+
+  background: url("./pic/nebular1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.picreflections { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 50%; 
+    height: 50%; 
+    
+    
+}
+
+
+/*planetarynebular*/
+.site1-planetary{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_planetary{
+  width: 100%;
+  height: 5vh;
+  background-color: #91426f;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
+}
+.planetary_site2{
+
+  background: url("./pic/nebular3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*supernova remnant*/
+
+.site1-supernova{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_supernova{
+  width: 100%;
+  height: 5vh;
+  background-color: red;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
+}
+.supernova_site2{
+
+  background: url("./pic/nebular2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Dark nebular   */
+
+
+.site1-dark{
+  height: 100%;
+  width: 100%;
+  background: url("./pic/nebular8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 10s linear infinite;
+}
+.head_supernova {
+    width: 100%;
+    height: 5vh;
+    background-color: #de6e4b;
+}
+/* animations zoomin zoomout background*/
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  100% { background-size: 140% auto; }
+  150% { background-size: 100% auto; }
+}
+.dark_site2{
+
+  background: url("./pic/nebular8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;height: auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
