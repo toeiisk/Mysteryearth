@@ -6,7 +6,6 @@ function con(){
         echo "Error: Unable to connect to MySQL." . PHP_EOL . " & ";
         echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL . " & ";
         echo "Debugging error: " . mysqli_connect_error() . PHP_EOL . " & ";
-        // con();
         exit;
     }
     mysqli_set_charset($link,"utf8");
@@ -39,7 +38,6 @@ function confetch($sql) {
         $result[$i] = $row;
         $i = $i + 1;
     }
-    // mysqli_fetch_assoc($result);
     return $result;
 }
 
